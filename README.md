@@ -3,6 +3,14 @@
 WTF IS GOLANG
 
 ## Usage
+
+```sh
+> // Usage
+> wtf is [...args]
+> // Example
+> wtf is "Python Programming" Rust "Progressive Web Apps"
+```
+
 ```sh
 ❯ ./wtf is rust
 1.> rust : Rust is an iron oxide, a usually reddish-brown oxide formed by the reaction of iron and oxygen in the catalytic presence of water or air moisture. Rust consists of hydrous iron(III) oxides (Fe2O3·nH2O) and iron(III) oxide-hydroxide (FeO(OH), Fe(OH)3), and is typically associated with the corrosion of refined iron. Given sufficient time, any iron mass, in the presence of water and oxygen, could eventually convert entirely to rust.
@@ -24,6 +32,7 @@ WTF IS GOLANG
 
 ### Uses Wikipedia
 ### Pretty simple
+### Makes a total N+1 api calls to wikipedia where N is the number of query items you provide
 
 
 ## Build and Run
