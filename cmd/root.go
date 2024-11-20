@@ -8,9 +8,10 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "wtf",
-	Short: "wtf is a cli tool for quick search.",
-	Long:  "wtf is a cli tool for quick search. wtf is <x>",
+	Use:     "wtf",
+	Short:   "wtf is a cli tool for quick search.",
+	Long:    "wtf is a cli tool for quick search. wtf is <x>",
+	Example: "wtf is meow golang",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Fprintf(os.Stderr, "Oops ! No command provided. Check `wtf --help`")
 	},

@@ -11,7 +11,8 @@ var isCmd = &cobra.Command{
 	Aliases: []string{"Is", "IS", "iS"},
 	Short:   "wtf is <x>.",
 	Long:    "wtf is <x>.",
-	Args:    cobra.MinimumNArgs(1),
+	Args:    cobra.RangeArgs(1, 50),
+	Example: "wtf is meow",
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Printf("%s\n", Is(args))
 	},
