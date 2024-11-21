@@ -100,12 +100,13 @@ func fetchSummary(responses *[]QueryResponse) error {
 	query_params.Add("prop", "extracts")
 	query_params.Add("pageids", pageids)
 	query_params.Add("format", "json")
-	query_params.Add("exsentences", "3")
+	query_params.Add("exsentences", fmt.Sprintf("%d", noOfLinesFlag))
 	query_params.Add("exintro", "true")
 	query_params.Add("explaintext", "true")
 	url := fmt.Sprintf("https://en.wikipedia.org/w/api.php?%s", query_params.Encode())
 
 	// fmt.Fprintf(os.Stdout, "Making GET %s\n", url)
+	// fmt.Fprintf(os.Stdout, "Using %d lines \n", noOfLinesFlag)
 
 	req, err := http.NewRequest("GET", url, nil)
 
