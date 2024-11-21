@@ -30,9 +30,21 @@ WTF IS GOLANG
 1.> meow or Meow : A meow or miaow is a cat vocalization. Meows may have diverse tones in terms of their sound, and what is heard can vary from being chattered to calls, murmurs, and whispers. Adult cats rarely meow to each other.
 ```
 
-### Uses Wikipedia
-### Pretty simple
-### Makes a total N+1 api calls to wikipedia where N is the number of query items you provide
+## Simple Install
+* Make sure you have golang and gopath setup properly
+* Install Using command
+  ```sh
+  go install github.com/GrayHat12/wtf
+  ```
+* Try it with `wtf is --help`
+* If it works, congrats
+* If not, check `go env GOPATH` and ensure that path is setup in zshrc or bashrc PATH variable
+
+## WHY
+* Written in Golang
+* Uses Wikipedia
+* Pretty simple
+* Makes a total N+1 api calls to wikipedia where N is the number of query items you provide
 
 
 ## Build and Run
